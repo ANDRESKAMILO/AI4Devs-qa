@@ -1,4 +1,211 @@
-# Prompts Iniciales - Pruebas E2E con Cypress para Interfaz "Position"
+# Prompts-ACBG
+ 
+## Prompt_1: Inicio converzación de punto de partida y condiciones en Curso. ASK/Auto
+Hola Como estas?
+Saludos nuevamente. Espero que tu status sean optimos y estes conforme para que  sigamos haciendo un Buen Equipo!...
+
+Me ayudas con tres `Questions` que tengo, brindandome tus **respuestas más `True` que puedas**, lo que podría significar en lenguaje humano True == Respuestas **sinceras**
+
+`Respuestas == Alucinaciones < 0.05%`
+
+`Respuestas sinceras == Respuestas`
+
+`True == Respuestas sinceras` 
+  
+ Me entiendes?
+
+---
+
+## Prompt_2: Preguntas iniciales. ASK/Auto
+1. Question_1:
+	- Como puedo clonar un repositorio desde cursor en una carpeta especifica determinada en mi equipo teniendo la `url` del repositorio de GitHub.
+2. Question_2:
+	- Puedes por favor generar un documento que te sirva como una **rule1.mdc** para que actues como un experto en ingeniería de software y revise y analise los proyectos a trabajar antes de impartir las tareas y misiones.
+3. Question_3
+	- Puedes por favor generar otro documento que te sirva como una **rule2.mdc** para que actues como un experto en Desarrollo de producto y testing E2E. para que revise y analise los proyectos que se esten desarrollando y con **Cypress** probar la interfaz que se requiera o se realice la petición. Asegurarnos de que la interfaz funciona correctamente mediante pruebas End-to-End (E2E).
+
+---
+
+## Prompt_3: Asimilación y primer revisión de la IA. ASK/Auto
+Contexto: @README.md, @package.json, @rule1.mdc
+
+Hola ayudame por favor asimilando este proyecto para que tengas pleno conocimiento de su diseño y estructura. Por ahora no generes ningún código.
+
+Cuando estes listo, me dices para darte la primer **tarea** por favor.
+
+
+---
+
+## Prompt_4: Asimilación y primer revisión de la IA. ASK/Auto
+Contexto: @rule1.mdc, @rule2.mdc 
+
+Por favor verifica esta documentación @Contexto_motivacion_1.md y me dices que piensas como para trabajarlo con el actual proyecto LTI (Sistema de Seguimiento de Talento (LTI)). Lo ves viable?, tendra que ver con lo que nos indican en nuestra primer **tarea** que esta en esta documentación @Contexto_motivacion_2.md 
+
+No tienes que ejecutar ni codificar nada, solo has una revisión para que entendamos el contexto de los dos documentos motivacionales que nos suministra nuestro CTO director.
+
+---
+
+## Prompt_5: punto de partida, dirección. Agente/Cloude sonnet 3.7
+Contexto: @rule1.mdc, @rule2.mdc
+Listo por favor vamos paso por paso para no alucinar, recuerda que estoy aprendiendo.
+
+Basandonos en la primer tarea que tenemos que hacer @Contexto_motivacion_2.md Como recomiendas que iniciemos?
+
+No has ningún código todavía
+
+
+---
+
+## Prompt_6: Consigna y enfoque objetivo. Agente/Cloude sonnet 3.7
+Contexto: @rule1.mdc, @rule2.mdc, @Contexto_motivacion_2.md
+Esta bien, pero siempre ten en cuenta que la consigna para esta tarea inicial es **Crear Pruebas E2E para la Interfaz "position"**
+
+---
+
+## Prompt_7: Depuración y desarrollo. Agente/Cloude sonnet 3.7
+Contexto: @rule1.mdc, @rule2.mdc, @Contexto_motivacion_2.md
+vistes el error:
+
+"Uncaught runtime errors:
+×
+ERROR
+Cannot read properties of undefined (reading 'map')
+TypeError: Cannot read properties of undefined (reading 'map')
+    at CandidateDetails (http://localhost:3000/static/js/bundle.js:1044:52)
+    at renderWithHooks (http://localhost:3000/static/js/bundle.js:69330:22)
+    at updateFunctionComponent (http://localhost:3000/static/js/bundle.js:72897:24)
+    at beginWork (http://localhost:3000/static/js/bundle.js:74616:20)
+    at HTMLUnknownElement.callCallback (http://localhost:3000/static/js/bundle.js:59586:18)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/static/js/bundle.js:59630:20)
+    at invokeGuardedCallback (http://localhost:3000/static/js/bundle.js:59687:35)
+    at beginWork$1 (http://localhost:3000/static/js/bundle.js:79585:11)
+    at performUnitOfWork (http://localhost:3000/static/js/bundle.js:78833:16)
+    at workLoopSync (http://localhost:3000/static/js/bundle.js:78756:9)
+ERROR
+Cannot read properties of undefined (reading 'map')
+TypeError: Cannot read properties of undefined (reading 'map')
+    at CandidateDetails (http://localhost:3000/static/js/bundle.js:1044:52)
+    at renderWithHooks (http://localhost:3000/static/js/bundle.js:69330:22)
+    at updateFunctionComponent (http://localhost:3000/static/js/bundle.js:72897:24)
+    at beginWork (http://localhost:3000/static/js/bundle.js:74616:20)
+    at HTMLUnknownElement.callCallback (http://localhost:3000/static/js/bundle.js:59586:18)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/static/js/bundle.js:59630:20)
+    at invokeGuardedCallback (http://localhost:3000/static/js/bundle.js:59687:35)
+    at beginWork$1 (http://localhost:3000/static/js/bundle.js:79585:11)
+    at performUnitOfWork (http://localhost:3000/static/js/bundle.js:78833:16)
+    at workLoopSync (http://localhost:3000/static/js/bundle.js:78756:9)
+ERROR
+Cannot read properties of undefined (reading 'map')
+TypeError: Cannot read properties of undefined (reading 'map')
+    at CandidateDetails (http://localhost:3000/static/js/bundle.js:1044:52)
+    at renderWithHooks (http://localhost:3000/static/js/bundle.js:69330:22)
+    at updateFunctionComponent (http://localhost:3000/static/js/bundle.js:72897:24)
+    at beginWork (http://localhost:3000/static/js/bundle.js:74616:20)
+    at beginWork$1 (http://localhost:3000/static/js/bundle.js:79563:18)
+    at performUnitOfWork (http://localhost:3000/static/js/bundle.js:78833:16)
+    at workLoopSync (http://localhost:3000/static/js/bundle.js:78756:9)
+    at renderRootSync (http://localhost:3000/static/js/bundle.js:78729:11)
+    at recoverFromConcurrentError (http://localhost:3000/static/js/bundle.js:78221:24)
+    at performConcurrentWorkOnRoot (http://localhost:3000/static/js/bundle.js:78134:26)"
+
+---
+
+## Prompt_8: Contexto para resolución. Agente/Cloude sonnet 3.7
+Contexto: @rule1.mdc, @rule2.mdc, @rule4.mdc, @Contexto_motivacion_2.md
+Si ayudame a solucionarlo. Pero:
+1. Recuerda que debemos cumplir con lo puntualmente especificado en @Contexto_motivacion_2.md 
+
+2. Si ves necesario para probar y cumplir con la tarea generar Datos mockeados, No hay problema, solo que si debemos dejar constancia de ello. 
+
+---
+
+## Prompt_9: Contexto para resolución y QA. Agente/Cloude sonnet 3.7
+Contexto: @rule1.mdc, @rule2.mdc, @rule4.mdc, @Contexto_motivacion_2.md, @curso-cypress-e2e.md
+Listo.
+Entonces:
+
+1. Realizar un último QA
+2. Actualizar Documentación generada
+3. Dejar Constancia del QA y Debuggin dentro del Documento @curso-cypress-e2e.md 
+
+---
+
+## Prompt_10: Contexto de un error en la implementación. Agente/Cloude sonnet 3.5
+Contexto: @rule1.mdc, @rule2.mdc, @rule4.mdc, @Contexto_motivacion_2.md
+
+Solo muestra la información del candidato "Ana López", si le doy encima de otro candidato por ejemplo el de "Pedro Martinez", igual me muestra la información del candidato "Ana López".
+
+Se podra corregir? Porque del resto esta muy bien.
+
+---
+
+## Prompt_11: Contexto de un nuevo error en la implementación. Agente/Cloude sonnet 3.5
+Contexto: @imagen_error.PNG, @rule1.mdc, @rule2.mdc, @rule4.mdc, @Contexto_motivacion_2.md
+
+mira el error:
+
+Trata de analizar y verificar como solucionarlo, sin ir a alterar mucho el avance.
+Además recuerda que "Menos es más", es decir, solo debemos preocuparnos por cumplir con las especificaciones una a una dadas en @Contexto_motivacion_2.md 
+
+---
+
+## Prompt_12: Contexto de un nuevo error en la implementación. Agente/Cloude sonnet 3.5
+Contexto: @imagen_new_error.PNG, @rule1.mdc, @rule2.mdc, @Contexto_motivacion_2.md
+mira el error:
+
+Trata de analizar y verificar como solucionarlo, sin ir a alterar mucho el avance.
+Además recuerda que "Menos es más", es decir, solo debemos preocuparnos por cumplir con las especificaciones una a una dadas en @Contexto_motivacion_2.md 
+
+---
+
+## Prompt_13: Implementación con resultados de las pruebas E2E aceptables. Agente/Cloude sonnet 3.5
+Contexto: @rule1.mdc, @rule2.mdc, @rule4.mdc, @Contexto_motivacion_2.md
+
+Listo, perfecto.
+Muchas Gracias.
+Creo que ahora si podemos:
+
+1. Hacer un ultimo QA
+2. Actualizar la documentación generada.
+3. Hacer commits en la rama creada
+4. Sugerirme un mensaje para el PR de entrega de la tarea.
+
+Contexto:
+Esta tarea era para entregar el Domingo 12 de mayo. Pero solo hasta el día de hoy 14 de mayo pude realizar la tarea. Trata de que el mensaje del PR contenga un aire de pena y verguenza por la demora, pero que tambien demostremos el interes y compromiso de trabajar y cumplir.
+
+Esto es parte del aprendizaje, lo crees así?
+
+---
+
+## Prompt_14: Finalizando y PR. Agente/Cloude sonnet 3.5
+Contexto: @curso-cypress-e2e.md, @cypress/README.md, @rule1.mdc, @rule2.mdc, @rule4.mdc 
+Que te parece si en el PR hacemos mención de que toda la documentación del procedimiento y paso a paso de las ejecuciones y dificultades están en el archivo @curso-cypress-e2e.md y @README.md . O No hay necesidad viendolo desde un campo de profesionales y CTO en desarrollo colaborativo de software y buenas prácticas?
+
+---
+
+## Prompt_15: Finalizando y PR. Agente/Cloude sonnet 3.5
+Contexto: @rule1.mdc, @rule2.mdc, @rule4.mdc, @Contexto_motivacion_2.md
+depronto un argumento del porque decidistes dejar la opción de `/e2e/position.spec.js` que se sugiere por defecto, y NO dejar solamente el que se solicitaba en @Contexto_motivacion_2.md 
+
+---
+
+## Prompt_16: Finalizando y PR. Agente/Cloude sonnet 3.5
+Contexto: @rule1.mdc, @rule2.mdc, @rule4.mdc, @Contexto_motivacion_2.md
+generame de nuevo el mensaje de la PR para verlo mejor actualizado. Por favor.
+
+Pero antes verifica que esta corrección No se tenga que actualizar documentaciones, como la estructura de alto nivel o algo por el estilo.
+
+---
+
+## Prompt_17: Finalizar y detener las ejecuciones de las pruebas en terminales. Agente/Cloude sonnet 3.5
+Contexto: @rule1.mdc, @rule2.mdc, @rule4.mdc
+como finalizo las ejecuciones del `npm start` tanto del backend como del frontend en sus respectivas terminales
+
+
+
+---
+
+# Prompts Iniciales - Pruebas E2E con Cypress para Interfaz "Position" Sección generada Automaticamente por CURSOR modo Agent/Sonnet 3.5 en su totalidad
 
 ## Descripción del Ejercicio
 
