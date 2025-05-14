@@ -6,7 +6,6 @@ Este directorio contiene las pruebas End-to-End (E2E) implementadas con Cypress 
 
 ```
 cypress/
-├── e2e/                # Archivos de prueba (estructura moderna de Cypress)
 ├── integration/        # Archivos de prueba (estructura solicitada en el ejercicio)
 │   └── position.spec.js # Pruebas para la interfaz "position"
 ├── fixtures/           # Datos de prueba

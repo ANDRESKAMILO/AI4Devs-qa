@@ -73,8 +73,7 @@ Cypress requiere una estructura específica de directorios:
 
 ```
 cypress/
-├── e2e/          # Archivos de prueba (estructura moderna)
-├── integration/  # Archivos de prueba (estructura tradicional)
+├── integration/  # Archivos de prueba (estructura solicitada en el ejercicio)
 ├── fixtures/     # Datos de prueba
 └── support/      # Archivos de soporte
     ├── commands.js
